@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/memory-game.css">
+</head>
+<body>
+    <div class="control-button">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+        <div id="timer" class="timer"></div>
+    </div>
+    <div class="memory-game-blocks">
+        <div class="game-block" data-technology="butterfly">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/butterfly.jpg" alt="butterfly">
+            </div>
+        </div>
+        <div class="game-block" data-technology="butterfly">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/butterfly.jpg" alt="butterfly">
+            </div>
+        </div>
+        <div class="game-block" data-technology="cat">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/cat.jpg" alt="cat">
+            </div>
+        </div>
+        <div class="game-block" data-technology="cat">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/cat.jpg" alt="cat">
+            </div>
+        </div>
+        <div class="game-block" data-technology="chicken">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/chicken.jpg" alt="chicken">
+            </div>
+        </div>
+        <div class="game-block" data-technology="chicken">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/chicken.jpg" alt="chicken">
+            </div>
+        </div>
+        <div class="game-block" data-technology="dog">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/dog.jpg" alt="dog">
+            </div>
+        </div>
+        <div class="game-block" data-technology="dog">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/dog.jpg" alt="dog">
+            </div>
+        </div>
+        <div class="game-block" data-technology="elephant">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/elephant.jpg" alt="elephant">
+            </div>
+        </div>
+        <div class="game-block" data-technology="elephant">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/elephant.jpg" alt="elephant">
+            </div>
+        </div>
+        <div class="game-block" data-technology="fish">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/fish.jpg" alt="fish">
+            </div>
+        </div>
+        <div class="game-block" data-technology="fish">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/fish.jpg" alt="fish">
+            </div>
+        </div>
+        <div class="game-block" data-technology="fox">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/fox.jpg" alt="fox">
+            </div>
+        </div>
+        <div class="game-block" data-technology="fox">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/fox.jpg" alt="fox">
+            </div>
+        </div>
+        <div class="game-block" data-technology="lion">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/lion.jpg" alt="lion">
+            </div>
+        </div>
+        <div class="game-block" data-technology="lion">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/lion.jpg" alt="lion">
+            </div>
+        </div>
+        <div class="game-block" data-technology="rabbit">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/rabbit.jpg" alt="rabbit">
+            </div>
+        </div>
+        <div class="game-block" data-technology="rabbit">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/rabbit.jpg" alt="rabbit">
+            </div>
+        </div>
+        <div class="game-block" data-technology="zebra">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/zebra.jpg" alt="zebra">
+            </div>
+        </div>
+        <div class="game-block" data-technology="zebra">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/zebra.jpg" alt="zebra">
+            </div>
+        </div>
+    </div>
+    <div class="button-reset">
+        <button onclick="reset()">Reset</button>
+    </div>
+    <audio id="success" src="mixkit-arcade-game-complete-or-approved-mission-205.wav" preload="auto"></audio>
+    <audio id="fail" src="mixkit-unlock-game-notification-253.wav" preload="auto"></audio>
+    <script src="js/memory-game.js"></script>
+</body>
+</html>
